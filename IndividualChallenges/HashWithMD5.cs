@@ -1,6 +1,14 @@
 public void HashWithMD5(byte[] data)
 {
-    var md5 = MD5.Create(); // Insecure hashing algorithm
-    var hash = md5.ComputeHash(data);
-    Console.WriteLine($"MD5 Hash: {Convert.ToHexString(hash)}");
+    byte[] dataBytes = Encoding.UTF8.GetBytes(data); 
+
+    using (SHA256 sha256 = SHA256.Create()) 
+
+    { 
+        byte[] hashBytes = sha256.ComputeHash(dataBytes); 
+
+        string hash = Convert.ToBase64String(hashBytes); 
+        Console.WriteLine($" Hash: {Convert.ToHexString(hash)}");
+
+    } 
 }
