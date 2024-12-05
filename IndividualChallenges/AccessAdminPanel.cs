@@ -1,11 +1,29 @@
-public void AccessAdminPanel(string username)
+using System;
+using System.Configuration;
+using Microsoft.Extensions.Configuration;
+
+public class AdminPanel
 {
-    if (username == "admin") // Hardcoded username for admin
+    private readonly IConfiguration _configuration;
+
+    public AdminPanel(IConfiguration configuration)
     {
-        Console.WriteLine("Access to Admin Panel Granted!");
+        _configuration = configuration;
     }
-    else
+
+    public void AccessAdminPanel(string username, string password)
     {
-        Console.WriteLine("Access Denied.");
+        // Retrieve credentials from configuration
+        string adminUsername = _configuration["AdminCredentials:Username"];
+        string adminPassword = _configuration["AdminCredentials:Password"];
+
+        if (username == adminUsername && password == adminPassword)
+        {
+            Console.WriteLine("Access to Admin Panel Granted!");
+        }
+        else
+        {
+            Console.WriteLine("Access Denied.");
+        }
     }
 }
