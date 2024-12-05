@@ -7,7 +7,7 @@
 - [ ] Authenticate User
 - [ ] Authenticate With Hardcoded Password
 - [ ] Connect With Hardcoded Connection String
-- [ ] Create Auth Cookie
+- [x] Create Auth Cookie
 - [X] Create Tcp Client
 - [ ] Create Web Request
 - [ ] Default Authentication
