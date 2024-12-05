@@ -30,7 +30,7 @@
 - [ ] Insecure Base64 Encryption
 - [ ] Insecurely Change Directory Access Control
 - [ ] Insecurely Execute Command
-- [ ] Insecurely Modify Registry
+- [x] Insecurely Modify Registry
 - [ ] Insecure Modify File Attributes
 - [x] Is Default Password
 - [ ] Log Exception Directly
