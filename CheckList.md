@@ -32,7 +32,7 @@
 - [ ] Insecurely Execute Command
 - [ ] Insecurely Modify Registry
 - [ ] Insecure Modify File Attributes
-- [ ] Is Default Password
+- [x] Is Default Password
 - [ ] Log Exception Directly
 - [ ] Log Sensitive Information
 - [ ] Log User Input To Console
