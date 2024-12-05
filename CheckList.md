@@ -73,8 +73,8 @@
 - [ ] 8
 
 ## Scenario based Challenges
-- [ ] Question1
+- [x] Question1
 - [ ] Question2
 - [ ] Question3
-- [ ] Question4
+- [x] Question4
 - [ ] Question5
